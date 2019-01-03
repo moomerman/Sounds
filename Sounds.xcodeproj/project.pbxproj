@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79BC376921DCF8BC00E4A65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BC376821DCF8BC00E4A65E /* AppDelegate.swift */; };
+		79BC376D21DCF8BE00E4A65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BC376C21DCF8BE00E4A65E /* Assets.xcassets */; };
+		79BC377021DCF8BE00E4A65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BC376E21DCF8BE00E4A65E /* Main.storyboard */; };
+		79BC379721DD000600E4A65E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BC379621DD000600E4A65E /* WebViewController.swift */; };
+		79BC379921DD05B900E4A65E /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BC379821DD05B900E4A65E /* EventMonitor.swift */; };
+		D3797C8B6D98FC8BB7222149 /* Pods_Sounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41EA41EDA5484F6C70A0C08 /* Pods_Sounds.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79BC377821DCF8BE00E4A65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79BC375D21DCF8BC00E4A65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79BC376421DCF8BC00E4A65E;
+			remoteInfo = Sounds;
+		};
+		79BC378321DCF8BE00E4A65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79BC375D21DCF8BC00E4A65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79BC376421DCF8BC00E4A65E;
+			remoteInfo = Sounds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DAD2982BE8EF473D6F65CD5 /* Pods-Sounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sounds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sounds/Pods-Sounds.debug.xcconfig"; sourceTree = "<group>"; };
+		79BC376521DCF8BC00E4A65E /* Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BC376821DCF8BC00E4A65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79BC376C21DCF8BE00E4A65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79BC376F21DCF8BE00E4A65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79BC377121DCF8BE00E4A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79BC377221DCF8BE00E4A65E /* Sounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sounds.entitlements; sourceTree = "<group>"; };
+		79BC379621DD000600E4A65E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		79BC379821DD05B900E4A65E /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		A41EA41EDA5484F6C70A0C08 /* Pods_Sounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E966EC5F56DF499E5367BE03 /* Pods-Sounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sounds.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sounds/Pods-Sounds.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79BC376221DCF8BC00E4A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3797C8B6D98FC8BB7222149 /* Pods_Sounds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BC377421DCF8BE00E4A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BC377F21DCF8BE00E4A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C2766C5B60360A12EC9E1C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DAD2982BE8EF473D6F65CD5 /* Pods-Sounds.debug.xcconfig */,
+				E966EC5F56DF499E5367BE03 /* Pods-Sounds.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79BC375C21DCF8BC00E4A65E = {
+			isa = PBXGroup;
+			children = (
+				79BC376721DCF8BC00E4A65E /* Sounds */,
+				79BC376621DCF8BC00E4A65E /* Products */,
+				4C2766C5B60360A12EC9E1C2 /* Pods */,
+				D17B0E1DA02CAEE3612BB9D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79BC376621DCF8BC00E4A65E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79BC376521DCF8BC00E4A65E /* Sounds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79BC376721DCF8BC00E4A65E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				79BC377221DCF8BE00E4A65E /* Sounds.entitlements */,
+				79BC377121DCF8BE00E4A65E /* Info.plist */,
+				79BC376821DCF8BC00E4A65E /* AppDelegate.swift */,
+				79BC379821DD05B900E4A65E /* EventMonitor.swift */,
+				79BC379621DD000600E4A65E /* WebViewController.swift */,
+				79BC376C21DCF8BE00E4A65E /* Assets.xcassets */,
+				79BC376E21DCF8BE00E4A65E /* Main.storyboard */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D17B0E1DA02CAEE3612BB9D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A41EA41EDA5484F6C70A0C08 /* Pods_Sounds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79BC376421DCF8BC00E4A65E /* Sounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79BC378B21DCF8BE00E4A65E /* Build configuration list for PBXNativeTarget "Sounds" */;
+			buildPhases = (
+				56226BD35EFAC2B042AF50A3 /* [CP] Check Pods Manifest.lock */,
+				79BC376121DCF8BC00E4A65E /* Sources */,
+				79BC376221DCF8BC00E4A65E /* Frameworks */,
+				79BC376321DCF8BC00E4A65E /* Resources */,
+				119DE965243F457542429E5D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sounds;
+			productName = Sounds;
+			productReference = 79BC376521DCF8BC00E4A65E /* Sounds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79BC375D21DCF8BC00E4A65E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Moocode Ltd.";
+				TargetAttributes = {
+					79BC376421DCF8BC00E4A65E = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					79BC377621DCF8BE00E4A65E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 79BC376421DCF8BC00E4A65E;
+					};
+					79BC378121DCF8BE00E4A65E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 79BC376421DCF8BC00E4A65E;
+					};
+				};
+			};
+			buildConfigurationList = 79BC376021DCF8BC00E4A65E /* Build configuration list for PBXProject "Sounds" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79BC375C21DCF8BC00E4A65E;
+			productRefGroup = 79BC376621DCF8BC00E4A65E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79BC376421DCF8BC00E4A65E /* Sounds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79BC376321DCF8BC00E4A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BC376D21DCF8BE00E4A65E /* Assets.xcassets in Resources */,
+				79BC377021DCF8BE00E4A65E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BC377521DCF8BE00E4A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BC378021DCF8BE00E4A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		119DE965243F457542429E5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sounds/Pods-Sounds-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MediaKeyTap/MediaKeyTap.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MediaKeyTap.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sounds/Pods-Sounds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56226BD35EFAC2B042AF50A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sounds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79BC376121DCF8BC00E4A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BC379721DD000600E4A65E /* WebViewController.swift in Sources */,
+				79BC376921DCF8BC00E4A65E /* AppDelegate.swift in Sources */,
+				79BC379921DD05B900E4A65E /* EventMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BC377321DCF8BE00E4A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BC377E21DCF8BE00E4A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79BC377921DCF8BE00E4A65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79BC376421DCF8BC00E4A65E /* Sounds */;
+			targetProxy = 79BC377821DCF8BE00E4A65E /* PBXContainerItemProxy */;
+		};
+		79BC378421DCF8BE00E4A65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79BC376421DCF8BC00E4A65E /* Sounds */;
+			targetProxy = 79BC378321DCF8BE00E4A65E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79BC376E21DCF8BE00E4A65E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79BC376F21DCF8BE00E4A65E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79BC378921DCF8BE00E4A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79BC378A21DCF8BE00E4A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		79BC378C21DCF8BE00E4A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DAD2982BE8EF473D6F65CD5 /* Pods-Sounds.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sounds/Sounds.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B3JURKS5LT;
+				INFOPLIST_FILE = Sounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moocode.Sounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		79BC378D21DCF8BE00E4A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E966EC5F56DF499E5367BE03 /* Pods-Sounds.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sounds/Sounds.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B3JURKS5LT;
+				INFOPLIST_FILE = Sounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moocode.Sounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79BC376021DCF8BC00E4A65E /* Build configuration list for PBXProject "Sounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BC378921DCF8BE00E4A65E /* Debug */,
+				79BC378A21DCF8BE00E4A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79BC378B21DCF8BE00E4A65E /* Build configuration list for PBXNativeTarget "Sounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BC378C21DCF8BE00E4A65E /* Debug */,
+				79BC378D21DCF8BE00E4A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79BC375D21DCF8BC00E4A65E /* Project object */;
+}
