@@ -47,10 +47,6 @@ class WebViewController: NSViewController {
         // p_audioui_backInterval
     }
 
-    public func hideHeader() {
-        execJS("document.getElementById(\"orb-banner\").style.display = \"none\"")
-    }
-
     private func execJS(_ js: String) {
         webView.evaluateJavaScript(js) { (result, error) in
             if let error = error {

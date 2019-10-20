@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 
         popover.contentViewController = webController
         popover.contentSize.width = 900
-        popover.contentSize.height = 450
+        popover.contentSize.height = 570
 
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
             if let strongSelf = self, strongSelf.popover.isShown {
@@ -47,10 +47,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
         DispatchQueue.main.async {
             self.showPopover(sender: self)
             self.closePopover(sender: self)
-        }
-
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2){
-            self.webController?.hideHeader()
         }
     }
 
