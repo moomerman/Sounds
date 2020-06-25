@@ -11,7 +11,6 @@
 		79BC376D21DCF8BE00E4A65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BC376C21DCF8BE00E4A65E /* Assets.xcassets */; };
 		79BC377021DCF8BE00E4A65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BC376E21DCF8BE00E4A65E /* Main.storyboard */; };
 		79BC379721DD000600E4A65E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BC379621DD000600E4A65E /* WebViewController.swift */; };
-		79BC379921DD05B900E4A65E /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BC379821DD05B900E4A65E /* EventMonitor.swift */; };
 		D3797C8B6D98FC8BB7222149 /* Pods_Sounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41EA41EDA5484F6C70A0C08 /* Pods_Sounds.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		79BC377121DCF8BE00E4A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79BC377221DCF8BE00E4A65E /* Sounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sounds.entitlements; sourceTree = "<group>"; };
 		79BC379621DD000600E4A65E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		79BC379821DD05B900E4A65E /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		A41EA41EDA5484F6C70A0C08 /* Pods_Sounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E966EC5F56DF499E5367BE03 /* Pods-Sounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sounds.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sounds/Pods-Sounds.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +72,6 @@
 				79BC377221DCF8BE00E4A65E /* Sounds.entitlements */,
 				79BC377121DCF8BE00E4A65E /* Info.plist */,
 				79BC376821DCF8BC00E4A65E /* AppDelegate.swift */,
-				79BC379821DD05B900E4A65E /* EventMonitor.swift */,
 				79BC379621DD000600E4A65E /* WebViewController.swift */,
 				79BC376C21DCF8BE00E4A65E /* Assets.xcassets */,
 				79BC376E21DCF8BE00E4A65E /* Main.storyboard */,
@@ -212,7 +209,6 @@
 			files = (
 				79BC379721DD000600E4A65E /* WebViewController.swift in Sources */,
 				79BC376921DCF8BC00E4A65E /* AppDelegate.swift in Sources */,
-				79BC379921DD05B900E4A65E /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

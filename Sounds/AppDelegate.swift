@@ -15,7 +15,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     let popover = NSPopover()
     var mediaKeyTap: MediaKeyTap?
-    var eventMonitor: EventMonitor?
     var webController: WebViewController?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -37,12 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
         popover.contentViewController = webController
         popover.contentSize.width = 900
         popover.contentSize.height = 600
-
-        eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
-            if let strongSelf = self, strongSelf.popover.isShown {
-                strongSelf.closePopover(sender: event)
-            }
-        }
+        popover.behavior = .transient
 
         DispatchQueue.main.async {
             self.showPopover(sender: self)
@@ -65,12 +59,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
         if let button = statusItem.button {
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
         }
-        eventMonitor?.start()
     }
 
     func closePopover(sender: Any?) {
         popover.performClose(sender)
-        eventMonitor?.stop()
     }
 
     func handle(mediaKey: MediaKey, event: KeyEvent) {
