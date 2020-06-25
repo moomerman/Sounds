@@ -10,12 +10,27 @@ import Cocoa
 import MediaKeyTap
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate {
 
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    let popover = NSPopover()
     var mediaKeyTap: MediaKeyTap?
     var webController: WebViewController?
+
+    lazy var popover: NSPopover = {
+        let popover = NSPopover()
+        popover.contentViewController = webController
+        popover.contentSize.width = 900
+        popover.contentSize.height = 600
+        popover.behavior = .transient
+        popover.delegate = self
+        return popover
+    }()
+
+    lazy var detachedWindowController: NSWindowController = {
+        let window = NSWindowController()
+        window.contentViewController = webController
+        return window
+    }()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         webController = WebViewController.freshController()
@@ -65,6 +80,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
         popover.performClose(sender)
     }
 
+}
+
+extension AppDelegate: MediaKeyTapDelegate {
     func handle(mediaKey: MediaKey, event: KeyEvent) {
         switch mediaKey {
         case .playPause:
@@ -74,5 +92,23 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
         case .next, .fastForward:
             webController?.live()
         }
+    }
+}
+
+extension AppDelegate: NSPopoverDelegate {
+    func popoverShouldDetach(_ popover: NSPopover) -> Bool {
+        return true
+    }
+
+    func detachableWindow(for popover: NSPopover) -> NSWindow? {
+        return detachedWindowController.window
+    }
+
+    func popoverDidShow(_ notification: Notification) {
+//        print("popoverDidShow")
+    }
+
+    func popoverDidClose(_ notification: Notification) {
+//        print("popoverDidClose")
     }
 }
