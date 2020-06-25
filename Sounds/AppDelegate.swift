@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 
         popover.contentViewController = webController
         popover.contentSize.width = 900
-        popover.contentSize.height = 570
+        popover.contentSize.height = 600
 
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
             if let strongSelf = self, strongSelf.popover.isShown {
