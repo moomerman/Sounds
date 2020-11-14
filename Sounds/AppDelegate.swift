@@ -27,9 +27,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }()
 
     lazy var detachedWindowController: NSWindowController = {
-        let window = NSWindowController()
-        window.contentViewController = webController
-        return window
+        let controller = NSWindowController()
+        controller.window?.isMovableByWindowBackground = true
+        controller.window?.styleMask = .fullSizeContentView
+        controller.contentViewController = webController
+        return controller
     }()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
