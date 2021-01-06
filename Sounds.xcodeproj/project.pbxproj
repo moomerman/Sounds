@@ -3,102 +3,110 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79BC376921DCF8BC00E4A65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BC376821DCF8BC00E4A65E /* AppDelegate.swift */; };
-		79BC376D21DCF8BE00E4A65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BC376C21DCF8BE00E4A65E /* Assets.xcassets */; };
-		79BC377021DCF8BE00E4A65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BC376E21DCF8BE00E4A65E /* Main.storyboard */; };
-		79BC379721DD000600E4A65E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BC379621DD000600E4A65E /* WebViewController.swift */; };
-		D3797C8B6D98FC8BB7222149 /* Pods_Sounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41EA41EDA5484F6C70A0C08 /* Pods_Sounds.framework */; };
+		799D90C925A667FE00D1E1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90C825A667FE00D1E1D0 /* AppDelegate.swift */; };
+		799D90CD25A6680000D1E1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799D90CC25A6680000D1E1D0 /* Assets.xcassets */; };
+		799D90D025A6680000D1E1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799D90CE25A6680000D1E1D0 /* Main.storyboard */; };
+		799D90E325A668B600D1E1D0 /* MediaApplicationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90DD25A668B600D1E1D0 /* MediaApplicationWatcher.swift */; };
+		799D90E425A668B600D1E1D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90DE25A668B600D1E1D0 /* Extensions.swift */; };
+		799D90E525A668B600D1E1D0 /* MediaKeyTapInternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90DF25A668B600D1E1D0 /* MediaKeyTapInternals.swift */; };
+		799D90E625A668B600D1E1D0 /* MediaKeyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90E025A668B600D1E1D0 /* MediaKeyTap.swift */; };
+		799D90E725A668B600D1E1D0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 799D90E125A668B600D1E1D0 /* LICENSE */; };
+		799D90E825A668B600D1E1D0 /* NSEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90E225A668B600D1E1D0 /* NSEventExtensions.swift */; };
+		799D90EB25A66AB600D1E1D0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90EA25A66AB600D1E1D0 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4DAD2982BE8EF473D6F65CD5 /* Pods-Sounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sounds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sounds/Pods-Sounds.debug.xcconfig"; sourceTree = "<group>"; };
-		79BC376521DCF8BC00E4A65E /* Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		79BC376821DCF8BC00E4A65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79BC376C21DCF8BE00E4A65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		79BC376F21DCF8BE00E4A65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		79BC377121DCF8BE00E4A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79BC377221DCF8BE00E4A65E /* Sounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sounds.entitlements; sourceTree = "<group>"; };
-		79BC379621DD000600E4A65E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		A41EA41EDA5484F6C70A0C08 /* Pods_Sounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E966EC5F56DF499E5367BE03 /* Pods-Sounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sounds.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sounds/Pods-Sounds.release.xcconfig"; sourceTree = "<group>"; };
+		799D90C525A667FE00D1E1D0 /* Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		799D90C825A667FE00D1E1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		799D90CC25A6680000D1E1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		799D90CF25A6680000D1E1D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		799D90D125A6680000D1E1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799D90D225A6680100D1E1D0 /* Sounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sounds.entitlements; sourceTree = "<group>"; };
+		799D90DD25A668B600D1E1D0 /* MediaApplicationWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaApplicationWatcher.swift; sourceTree = "<group>"; };
+		799D90DE25A668B600D1E1D0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		799D90DF25A668B600D1E1D0 /* MediaKeyTapInternals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaKeyTapInternals.swift; sourceTree = "<group>"; };
+		799D90E025A668B600D1E1D0 /* MediaKeyTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaKeyTap.swift; sourceTree = "<group>"; };
+		799D90E125A668B600D1E1D0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		799D90E225A668B600D1E1D0 /* NSEventExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSEventExtensions.swift; sourceTree = "<group>"; };
+		799D90EA25A66AB600D1E1D0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		79BC376221DCF8BC00E4A65E /* Frameworks */ = {
+		799D90C225A667FE00D1E1D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3797C8B6D98FC8BB7222149 /* Pods_Sounds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C2766C5B60360A12EC9E1C2 /* Pods */ = {
+		799D90BC25A667FE00D1E1D0 = {
 			isa = PBXGroup;
 			children = (
-				4DAD2982BE8EF473D6F65CD5 /* Pods-Sounds.debug.xcconfig */,
-				E966EC5F56DF499E5367BE03 /* Pods-Sounds.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		79BC375C21DCF8BC00E4A65E = {
-			isa = PBXGroup;
-			children = (
-				79BC376721DCF8BC00E4A65E /* Sounds */,
-				79BC376621DCF8BC00E4A65E /* Products */,
-				4C2766C5B60360A12EC9E1C2 /* Pods */,
-				D17B0E1DA02CAEE3612BB9D3 /* Frameworks */,
+				799D90C725A667FE00D1E1D0 /* Sounds */,
+				799D90C625A667FE00D1E1D0 /* Products */,
+				799D90DB25A6687A00D1E1D0 /* Libraries */,
 			);
 			sourceTree = "<group>";
 		};
-		79BC376621DCF8BC00E4A65E /* Products */ = {
+		799D90C625A667FE00D1E1D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79BC376521DCF8BC00E4A65E /* Sounds.app */,
+				799D90C525A667FE00D1E1D0 /* Sounds.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		79BC376721DCF8BC00E4A65E /* Sounds */ = {
+		799D90C725A667FE00D1E1D0 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				79BC377221DCF8BE00E4A65E /* Sounds.entitlements */,
-				79BC377121DCF8BE00E4A65E /* Info.plist */,
-				79BC376821DCF8BC00E4A65E /* AppDelegate.swift */,
-				79BC379621DD000600E4A65E /* WebViewController.swift */,
-				79BC376C21DCF8BE00E4A65E /* Assets.xcassets */,
-				79BC376E21DCF8BE00E4A65E /* Main.storyboard */,
+				799D90C825A667FE00D1E1D0 /* AppDelegate.swift */,
+				799D90CC25A6680000D1E1D0 /* Assets.xcassets */,
+				799D90CE25A6680000D1E1D0 /* Main.storyboard */,
+				799D90D125A6680000D1E1D0 /* Info.plist */,
+				799D90D225A6680100D1E1D0 /* Sounds.entitlements */,
+				799D90EA25A66AB600D1E1D0 /* WebViewController.swift */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		D17B0E1DA02CAEE3612BB9D3 /* Frameworks */ = {
+		799D90DB25A6687A00D1E1D0 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				A41EA41EDA5484F6C70A0C08 /* Pods_Sounds.framework */,
+				799D90DC25A6689F00D1E1D0 /* MediaKeyTap */,
 			);
-			name = Frameworks;
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		799D90DC25A6689F00D1E1D0 /* MediaKeyTap */ = {
+			isa = PBXGroup;
+			children = (
+				799D90DE25A668B600D1E1D0 /* Extensions.swift */,
+				799D90E125A668B600D1E1D0 /* LICENSE */,
+				799D90DD25A668B600D1E1D0 /* MediaApplicationWatcher.swift */,
+				799D90E025A668B600D1E1D0 /* MediaKeyTap.swift */,
+				799D90DF25A668B600D1E1D0 /* MediaKeyTapInternals.swift */,
+				799D90E225A668B600D1E1D0 /* NSEventExtensions.swift */,
+			);
+			path = MediaKeyTap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79BC376421DCF8BC00E4A65E /* Sounds */ = {
+		799D90C425A667FE00D1E1D0 /* Sounds */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79BC378B21DCF8BE00E4A65E /* Build configuration list for PBXNativeTarget "Sounds" */;
+			buildConfigurationList = 799D90D525A6680100D1E1D0 /* Build configuration list for PBXNativeTarget "Sounds" */;
 			buildPhases = (
-				56226BD35EFAC2B042AF50A3 /* [CP] Check Pods Manifest.lock */,
-				79BC376121DCF8BC00E4A65E /* Sources */,
-				79BC376221DCF8BC00E4A65E /* Frameworks */,
-				79BC376321DCF8BC00E4A65E /* Resources */,
-				119DE965243F457542429E5D /* [CP] Embed Pods Frameworks */,
+				799D90C125A667FE00D1E1D0 /* Sources */,
+				799D90C225A667FE00D1E1D0 /* Frameworks */,
+				799D90C325A667FE00D1E1D0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -106,119 +114,76 @@
 			);
 			name = Sounds;
 			productName = Sounds;
-			productReference = 79BC376521DCF8BC00E4A65E /* Sounds.app */;
+			productReference = 799D90C525A667FE00D1E1D0 /* Sounds.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		79BC375D21DCF8BC00E4A65E /* Project object */ = {
+		799D90BD25A667FE00D1E1D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1200;
-				ORGANIZATIONNAME = "Moocode Ltd.";
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					79BC376421DCF8BC00E4A65E = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1110;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 1;
-							};
-						};
+					799D90C425A667FE00D1E1D0 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = 79BC376021DCF8BC00E4A65E /* Build configuration list for PBXProject "Sounds" */;
-			compatibilityVersion = "Xcode 10.0";
+			buildConfigurationList = 799D90C025A667FE00D1E1D0 /* Build configuration list for PBXProject "Sounds" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 79BC375C21DCF8BC00E4A65E;
-			productRefGroup = 79BC376621DCF8BC00E4A65E /* Products */;
+			mainGroup = 799D90BC25A667FE00D1E1D0;
+			productRefGroup = 799D90C625A667FE00D1E1D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79BC376421DCF8BC00E4A65E /* Sounds */,
+				799D90C425A667FE00D1E1D0 /* Sounds */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		79BC376321DCF8BC00E4A65E /* Resources */ = {
+		799D90C325A667FE00D1E1D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79BC376D21DCF8BE00E4A65E /* Assets.xcassets in Resources */,
-				79BC377021DCF8BE00E4A65E /* Main.storyboard in Resources */,
+				799D90E725A668B600D1E1D0 /* LICENSE in Resources */,
+				799D90CD25A6680000D1E1D0 /* Assets.xcassets in Resources */,
+				799D90D025A6680000D1E1D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		119DE965243F457542429E5D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sounds/Pods-Sounds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sounds/Pods-Sounds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sounds/Pods-Sounds-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		56226BD35EFAC2B042AF50A3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Sounds-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		79BC376121DCF8BC00E4A65E /* Sources */ = {
+		799D90C125A667FE00D1E1D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79BC379721DD000600E4A65E /* WebViewController.swift in Sources */,
-				79BC376921DCF8BC00E4A65E /* AppDelegate.swift in Sources */,
+				799D90E625A668B600D1E1D0 /* MediaKeyTap.swift in Sources */,
+				799D90E325A668B600D1E1D0 /* MediaApplicationWatcher.swift in Sources */,
+				799D90E825A668B600D1E1D0 /* NSEventExtensions.swift in Sources */,
+				799D90C925A667FE00D1E1D0 /* AppDelegate.swift in Sources */,
+				799D90E525A668B600D1E1D0 /* MediaKeyTapInternals.swift in Sources */,
+				799D90E425A668B600D1E1D0 /* Extensions.swift in Sources */,
+				799D90EB25A66AB600D1E1D0 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79BC376E21DCF8BE00E4A65E /* Main.storyboard */ = {
+		799D90CE25A6680000D1E1D0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				79BC376F21DCF8BE00E4A65E /* Base */,
+				799D90CF25A6680000D1E1D0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -226,7 +191,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		79BC378921DCF8BE00E4A65E /* Debug */ = {
+		799D90D325A6680100D1E1D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +224,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -278,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -288,7 +252,7 @@
 			};
 			name = Debug;
 		};
-		79BC378A21DCF8BE00E4A65E /* Release */ = {
+		799D90D425A6680100D1E1D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -321,7 +285,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -334,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -343,42 +306,44 @@
 			};
 			name = Release;
 		};
-		79BC378C21DCF8BE00E4A65E /* Debug */ = {
+		799D90D625A6680100D1E1D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DAD2982BE8EF473D6F65CD5 /* Pods-Sounds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sounds/Sounds.entitlements;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B3JURKS5LT;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Sounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.moocode.Sounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		79BC378D21DCF8BE00E4A65E /* Release */ = {
+		799D90D725A6680100D1E1D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E966EC5F56DF499E5367BE03 /* Pods-Sounds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sounds/Sounds.entitlements;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B3JURKS5LT;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Sounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.moocode.Sounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -388,25 +353,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79BC376021DCF8BC00E4A65E /* Build configuration list for PBXProject "Sounds" */ = {
+		799D90C025A667FE00D1E1D0 /* Build configuration list for PBXProject "Sounds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79BC378921DCF8BE00E4A65E /* Debug */,
-				79BC378A21DCF8BE00E4A65E /* Release */,
+				799D90D325A6680100D1E1D0 /* Debug */,
+				799D90D425A6680100D1E1D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79BC378B21DCF8BE00E4A65E /* Build configuration list for PBXNativeTarget "Sounds" */ = {
+		799D90D525A6680100D1E1D0 /* Build configuration list for PBXNativeTarget "Sounds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79BC378C21DCF8BE00E4A65E /* Debug */,
-				79BC378D21DCF8BE00E4A65E /* Release */,
+				799D90D625A6680100D1E1D0 /* Debug */,
+				799D90D725A6680100D1E1D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 79BC375D21DCF8BC00E4A65E /* Project object */;
+	rootObject = 799D90BD25A667FE00D1E1D0 /* Project object */;
 }

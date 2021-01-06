@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import MediaKeyTap
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
