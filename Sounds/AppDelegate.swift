@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let popover = NSPopover()
         popover.contentViewController = webController
         popover.contentSize.width = 900
-        popover.contentSize.height = 600
+        popover.contentSize.height = 635
         popover.behavior = .transient
         popover.delegate = self
         return popover
@@ -51,7 +51,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         popover.contentViewController = webController
         popover.contentSize.width = 900
-        popover.contentSize.height = 600
+        popover.contentSize.height = 635
         popover.behavior = .transient
 
         DispatchQueue.main.async {
