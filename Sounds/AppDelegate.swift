@@ -46,13 +46,39 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         icon?.isTemplate = true
         if let button = statusItem.button {
             button.image = icon
-            button.action = #selector(togglePopover(_:))
+            button.action = #selector(handleStatusBarClick(_:))
+            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
 
         popover.contentViewController = webController
         popover.contentSize.width = 1060
         popover.contentSize.height = 670
         popover.behavior = .transient
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.showPopover(sender: nil)
+        }
+    }
+
+    @objc func handleStatusBarClick(_ sender: NSStatusBarButton) {
+        let event = NSApp.currentEvent!
+
+        if event.type == .rightMouseUp {
+            showContextMenu()
+        } else {
+            togglePopover(sender)
+        }
+    }
+
+    func showContextMenu() {
+        let menu = NSMenu()
+        menu.autoenablesItems = false
+
+        addAppControlItems(to: menu)
+
+        statusItem.menu = menu
+        statusItem.button?.performClick(nil)
+        statusItem.menu = nil
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -107,4 +133,31 @@ extension AppDelegate: NSPopoverDelegate {
     func popoverDidClose(_ notification: Notification) {
 //        print("popoverDidClose")
     }
+}
+
+extension AppDelegate {
+
+    func addAppControlItems(to menu: NSMenu) {
+        let showMainItem = NSMenuItem(title: "Open Sounds", action: #selector(showMainWindow), keyEquivalent: "")
+        showMainItem.target = self
+        showMainItem.isEnabled = true
+        menu.addItem(showMainItem)
+
+        let quitItem = NSMenuItem(title: "Quit", action: #selector(quitApp), keyEquivalent: "q")
+        quitItem.target = self
+        quitItem.isEnabled = true
+        menu.addItem(quitItem)
+    }
+}
+
+extension AppDelegate {
+
+    @objc func showMainWindow() {
+        showPopover(sender: nil)
+    }
+
+    @objc func quitApp() {
+        NSApp.terminate(nil)
+    }
+
 }
