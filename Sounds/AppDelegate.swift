@@ -17,9 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     lazy var popover: NSPopover = {
         let popover = NSPopover()
-        popover.contentViewController = webController
-        popover.contentSize.width = 1060
-        popover.contentSize.height = 670
+        popover.contentSize.width = Constants.popoverWidth
+        popover.contentSize.height = Constants.popoverHeight
         popover.behavior = .transient
         popover.delegate = self
         return popover
@@ -35,29 +34,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         webController = WebViewController.freshController()
-        DispatchQueue.main.async {
-            self.webController?.view.needsLayout = true
-        }
+        popover.contentViewController = webController
+        self.webController?.view.needsLayout = true
 
         mediaKeyTap = MediaKeyTap(delegate: self)
         mediaKeyTap?.start()
 
-        let icon = NSImage(named: "status")
-        icon?.isTemplate = true
-        if let button = statusItem.button {
-            button.image = icon
-            button.action = #selector(handleStatusBarClick(_:))
-            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
-        }
+        setupStatusBarItem()
 
-        popover.contentViewController = webController
-        popover.contentSize.width = 1060
-        popover.contentSize.height = 670
-        popover.behavior = .transient
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + Constants.launchDelay) {
             self.showPopover(sender: nil)
         }
+    }
+
+    private func setupStatusBarItem() {
+        let icon = NSImage(named: "status")
+        icon?.isTemplate = true
+
+        guard let button = statusItem.button else { return }
+        button.image = icon
+        button.action = #selector(handleStatusBarClick(_:))
+        button.sendAction(on: [.leftMouseUp, .rightMouseUp])
     }
 
     @objc func handleStatusBarClick(_ sender: NSStatusBarButton) {
@@ -82,6 +79,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
+        mediaKeyTap = nil
+        popover.contentViewController = nil
+        webController = nil
     }
 
     @objc func togglePopover(_ sender: Any?) {
@@ -125,17 +125,14 @@ extension AppDelegate: NSPopoverDelegate {
     func detachableWindow(for popover: NSPopover) -> NSWindow? {
         return detachedWindowController.window
     }
-
-    func popoverDidShow(_ notification: Notification) {
-//        print("popoverDidShow")
-    }
-
-    func popoverDidClose(_ notification: Notification) {
-//        print("popoverDidClose")
-    }
 }
 
 extension AppDelegate {
+    private enum Constants {
+        static let popoverWidth: CGFloat = 1060
+        static let popoverHeight: CGFloat = 670
+        static let launchDelay: TimeInterval = 0.5
+    }
 
     func addAppControlItems(to menu: NSMenu) {
         let showMainItem = NSMenuItem(title: "Open Sounds", action: #selector(showMainWindow), keyEquivalent: "")
@@ -148,9 +145,6 @@ extension AppDelegate {
         quitItem.isEnabled = true
         menu.addItem(quitItem)
     }
-}
-
-extension AppDelegate {
 
     @objc func showMainWindow() {
         showPopover(sender: nil)
@@ -159,5 +153,4 @@ extension AppDelegate {
     @objc func quitApp() {
         NSApp.terminate(nil)
     }
-
 }

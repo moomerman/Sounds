@@ -39,14 +39,6 @@ class WebViewController: NSViewController {
         execJS("document.getElementById(\"smphtml5iframesmp-wrapper\").contentWindow.document.getElementById(\"p_audioui_backToStartButton\").click()")
     }
 
-    public func forward() {
-        // p_audioui_forwardInterval
-    }
-
-    public func back() {
-        // p_audioui_backInterval
-    }
-
     private func execJS(_ js: String) {
         webView.evaluateJavaScript(js) { (result, error) in
             if let error = error {
@@ -54,16 +46,11 @@ class WebViewController: NSViewController {
             }
         }
     }
-    
+
 }
 
 extension WebViewController {
     static func freshController() -> WebViewController {
-        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
-        let identifier = NSStoryboard.SceneIdentifier("WebViewController")
-        guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? WebViewController else {
-            fatalError("Why cant i find WebViewController? - Check Main.storyboard")
-        }
-        return viewcontroller
+        return WebViewController()
     }
 }
