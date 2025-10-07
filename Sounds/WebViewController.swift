@@ -20,7 +20,7 @@ class WebViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadURL(URL(string:"https://www.bbc.co.uk/sounds/play/live:bbc_6music")!)
+        loadURL(URL(string:"https://www.bbc.co.uk/sounds/stations")!)
     }
 
     public func loadURL(_ url: URL) {

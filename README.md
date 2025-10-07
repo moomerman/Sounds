@@ -7,6 +7,7 @@ the story behind this project.
 
 ## Running locally
 
-* Checkout the code
-* run `pod install` from the command line (see [Cocoapods](https://cocoapods.org/) if you need to install it)
-* Run the application
+* Install XCode from the App Store if you don't already have it
+* Open the `Sounds.xcodeproj` project file in xcode
+* Product -> Archive -> Distribute App -> Custom -> Copy App (This creates a folder with the application file in it)
+* Copy the app into your application folder and you are good to go!

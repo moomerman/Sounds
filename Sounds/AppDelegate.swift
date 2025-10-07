@@ -18,8 +18,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     lazy var popover: NSPopover = {
         let popover = NSPopover()
         popover.contentViewController = webController
-        popover.contentSize.width = 900
-        popover.contentSize.height = 635
+        popover.contentSize.width = 1060
+        popover.contentSize.height = 670
         popover.behavior = .transient
         popover.delegate = self
         return popover
@@ -50,14 +50,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         popover.contentViewController = webController
-        popover.contentSize.width = 900
-        popover.contentSize.height = 635
+        popover.contentSize.width = 1060
+        popover.contentSize.height = 670
         popover.behavior = .transient
-
-        DispatchQueue.main.async {
-            self.showPopover(sender: self)
-            self.closePopover(sender: self)
-        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
