@@ -130,7 +130,7 @@ extension AppDelegate: NSPopoverDelegate {
 extension AppDelegate {
     private enum Constants {
         static let popoverWidth: CGFloat = 1060
-        static let popoverHeight: CGFloat = 670
+        static let popoverHeight: CGFloat = 780
         static let launchDelay: TimeInterval = 0.5
     }
 
