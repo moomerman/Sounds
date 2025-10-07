@@ -140,10 +140,34 @@ extension AppDelegate {
         showMainItem.isEnabled = true
         menu.addItem(showMainItem)
 
+        menu.addItem(NSMenuItem.separator())
+
+        let aboutItem = NSMenuItem(title: "About Sounds", action: #selector(showAbout), keyEquivalent: "")
+        aboutItem.target = self
+        aboutItem.isEnabled = true
+        menu.addItem(aboutItem)
+
         let quitItem = NSMenuItem(title: "Quit", action: #selector(quitApp), keyEquivalent: "q")
         quitItem.target = self
         quitItem.isEnabled = true
         menu.addItem(quitItem)
+    }
+
+    @objc func showAbout() {
+        let alert = NSAlert()
+        alert.messageText = "Sounds"
+        alert.informativeText = """
+        A BBC Sounds status bar app for macOS
+
+        Built with ♥ for BBC Sounds listeners
+
+        github.com/moomerman/Sounds
+        v\(Bundle.main.appVersion)
+        """
+        alert.alertStyle = .informational
+        alert.icon = NSImage(named: "AppIcon") ?? NSImage(named: "status")
+        alert.addButton(withTitle: "OK")
+        alert.runModal()
     }
 
     @objc func showMainWindow() {
@@ -152,5 +176,17 @@ extension AppDelegate {
 
     @objc func quitApp() {
         NSApp.terminate(nil)
+    }
+}
+
+extension Bundle {
+    var appName: String {
+        return infoDictionary?["CFBundleName"] as? String ?? "Sounds"
+    }
+
+    var appVersion: String {
+        let version = infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
+        let build = infoDictionary?["CFBundleVersion"] as? String ?? "1"
+        return "\(version) (\(build))"
     }
 }
