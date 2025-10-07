@@ -1,6 +1,6 @@
 ## Sounds - BBC Sounds status bar App for macOS
 
-![Sounds Screenshot](sounds.png)
+![Sounds Screenshot](screenshot.png)
 
 See [Building a BBC Sounds status bar app for macOS](https://www.richt.co.uk/articles/building-bbc-sounds-app-for-macos/) for
 the story behind this project.
