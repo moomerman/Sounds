@@ -45,24 +45,22 @@ extension WebViewController {
 }
 
 extension WebViewController: WKNavigationDelegate {
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction) async -> WKNavigationActionPolicy {
         let url = navigationAction.request.url
         if isTrusted(url: url) {
-            decisionHandler(.allow)
-        } else {
-            log.notice("Blocked navigation to untrusted host: \(url?.absoluteString ?? "unknown", privacy: .public)")
-            decisionHandler(.cancel)
+            return .allow
         }
+        log.notice("Blocked navigation to untrusted host: \(url?.absoluteString ?? "unknown", privacy: .public)")
+        return .cancel
     }
 
-    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse) async -> WKNavigationResponsePolicy {
         let url = navigationResponse.response.url
         if isTrusted(url: url) {
-            decisionHandler(.allow)
-        } else {
-            log.notice("Blocked response from untrusted host: \(url?.absoluteString ?? "unknown", privacy: .public)")
-            decisionHandler(.cancel)
+            return .allow
         }
+        log.notice("Blocked response from untrusted host: \(url?.absoluteString ?? "unknown", privacy: .public)")
+        return .cancel
     }
 }
 

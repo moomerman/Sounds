@@ -9,6 +9,7 @@
 import Cocoa
 
 @main
+@MainActor
 class AppDelegate: NSObject, NSApplicationDelegate {
     static func main() {
         let app = NSApplication.shared
@@ -16,7 +17,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         app.delegate = delegate
         app.run()
     }
-
 
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     var webController: WebViewController?
@@ -38,12 +38,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         setupMainMenu()
         setupStatusBarItem()
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + Constants.launchDelay) {
+        Task {
+            try? await Task.sleep(for: .milliseconds(Int(Constants.launchDelay * 1000)))
             self.showPopover(sender: nil)
         }
     }
 
-    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
+    nonisolated func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
     }
 
