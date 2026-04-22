@@ -13,7 +13,8 @@ class WebViewController: NSViewController {
     var webView: WKWebView!
 
     private let trustedHosts: Set<String> = [
-        "www.bbc.co.uk",
+        "bbc.co.uk",
+        "bbc.com",
     ]
 
     private enum Selectors {
