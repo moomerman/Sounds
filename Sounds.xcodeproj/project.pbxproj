@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		799D90C925A667FE00D1E1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90C825A667FE00D1E1D0 /* AppDelegate.swift */; };
 		799D90CD25A6680000D1E1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799D90CC25A6680000D1E1D0 /* Assets.xcassets */; };
-		799D90E325A668B600D1E1D0 /* MediaApplicationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90DD25A668B600D1E1D0 /* MediaApplicationWatcher.swift */; };
-		799D90E425A668B600D1E1D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90DE25A668B600D1E1D0 /* Extensions.swift */; };
-		799D90E525A668B600D1E1D0 /* MediaKeyTapInternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90DF25A668B600D1E1D0 /* MediaKeyTapInternals.swift */; };
-		799D90E625A668B600D1E1D0 /* MediaKeyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90E025A668B600D1E1D0 /* MediaKeyTap.swift */; };
-		799D90E725A668B600D1E1D0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 799D90E125A668B600D1E1D0 /* LICENSE */; };
-		799D90E825A668B600D1E1D0 /* NSEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90E225A668B600D1E1D0 /* NSEventExtensions.swift */; };
 		799D90EB25A66AB600D1E1D0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D90EA25A66AB600D1E1D0 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,12 +17,6 @@
 		799D90C825A667FE00D1E1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		799D90CC25A6680000D1E1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799D90D125A6680000D1E1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		799D90DD25A668B600D1E1D0 /* MediaApplicationWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaApplicationWatcher.swift; sourceTree = "<group>"; };
-		799D90DE25A668B600D1E1D0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		799D90DF25A668B600D1E1D0 /* MediaKeyTapInternals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaKeyTapInternals.swift; sourceTree = "<group>"; };
-		799D90E025A668B600D1E1D0 /* MediaKeyTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaKeyTap.swift; sourceTree = "<group>"; };
-		799D90E125A668B600D1E1D0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		799D90E225A668B600D1E1D0 /* NSEventExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSEventExtensions.swift; sourceTree = "<group>"; };
 		799D90EA25A66AB600D1E1D0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +36,6 @@
 			children = (
 				799D90C725A667FE00D1E1D0 /* Sounds */,
 				799D90C625A667FE00D1E1D0 /* Products */,
-				799D90DB25A6687A00D1E1D0 /* Libraries */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,27 +56,6 @@
 				799D90EA25A66AB600D1E1D0 /* WebViewController.swift */,
 			);
 			path = Sounds;
-			sourceTree = "<group>";
-		};
-		799D90DB25A6687A00D1E1D0 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				799D90DC25A6689F00D1E1D0 /* MediaKeyTap */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		799D90DC25A6689F00D1E1D0 /* MediaKeyTap */ = {
-			isa = PBXGroup;
-			children = (
-				799D90DE25A668B600D1E1D0 /* Extensions.swift */,
-				799D90E125A668B600D1E1D0 /* LICENSE */,
-				799D90DD25A668B600D1E1D0 /* MediaApplicationWatcher.swift */,
-				799D90E025A668B600D1E1D0 /* MediaKeyTap.swift */,
-				799D90DF25A668B600D1E1D0 /* MediaKeyTapInternals.swift */,
-				799D90E225A668B600D1E1D0 /* NSEventExtensions.swift */,
-			);
-			path = MediaKeyTap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +116,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				799D90E725A668B600D1E1D0 /* LICENSE in Resources */,
 				799D90CD25A6680000D1E1D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,12 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				799D90E625A668B600D1E1D0 /* MediaKeyTap.swift in Sources */,
-				799D90E325A668B600D1E1D0 /* MediaApplicationWatcher.swift in Sources */,
-				799D90E825A668B600D1E1D0 /* NSEventExtensions.swift in Sources */,
 				799D90C925A667FE00D1E1D0 /* AppDelegate.swift in Sources */,
-				799D90E525A668B600D1E1D0 /* MediaKeyTapInternals.swift in Sources */,
-				799D90E425A668B600D1E1D0 /* Extensions.swift in Sources */,
 				799D90EB25A66AB600D1E1D0 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

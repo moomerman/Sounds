@@ -20,13 +20,6 @@ class WebViewController: NSViewController {
         "bbc.com",
     ]
 
-    private enum Selectors {
-        static let iframeWrapperID = "smphtml5iframesmp-wrapper"
-        static let playPauseButtonID = "p_audioui_playpause"
-        static let liveButtonID = "p_audioui_toLiveButton"
-        static let backToStartButtonID = "p_audioui_backToStartButton"
-    }
-
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
@@ -36,37 +29,12 @@ class WebViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadURL(URL(string:"https://www.bbc.co.uk/sounds/stations")!)
+        loadURL(URL(string: "https://www.bbc.co.uk/sounds/stations")!)
     }
 
     public func loadURL(_ url: URL) {
         webView.load(URLRequest(url: url))
     }
-
-    public func togglePlay() {
-        execJS(jsClickButtonInIframe(buttonID: Selectors.playPauseButtonID))
-    }
-
-    public func live() {
-        execJS(jsClickButtonInIframe(buttonID: Selectors.liveButtonID))
-    }
-
-    public func start() {
-        execJS(jsClickButtonInIframe(buttonID: Selectors.backToStartButtonID))
-    }
-
-    private func jsClickButtonInIframe(buttonID: String) -> String {
-        return "document.getElementById(\"\(Selectors.iframeWrapperID)\").contentWindow.document.getElementById(\"\(buttonID)\").click()"
-    }
-
-    private func execJS(_ js: String) {
-        webView.evaluateJavaScript(js) { (result, error) in
-            if let error = error {
-                log.error("JS error: \(error.localizedDescription, privacy: .public) — script: \(js, privacy: .public)")
-            }
-        }
-    }
-
 }
 
 extension WebViewController {

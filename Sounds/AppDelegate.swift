@@ -19,7 +19,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    var mediaKeyTap: MediaKeyTap?
     var webController: WebViewController?
 
     lazy var popover: NSPopover = {
@@ -35,9 +34,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         webController = WebViewController()
         popover.contentViewController = webController
         self.webController?.view.needsLayout = true
-
-        mediaKeyTap = MediaKeyTap(delegate: self)
-        mediaKeyTap?.start()
 
         setupMainMenu()
         setupStatusBarItem()
@@ -88,12 +84,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = nil
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        mediaKeyTap = nil
-        popover.contentViewController = nil
-        webController = nil
-    }
-
     @objc func togglePopover(_ sender: Any?) {
         if popover.isShown {
             closePopover(sender: sender)
@@ -112,19 +102,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.performClose(sender)
     }
 
-}
-
-extension AppDelegate: MediaKeyTapDelegate {
-    func handle(mediaKey: MediaKey, event: KeyEvent) {
-        switch mediaKey {
-        case .playPause:
-            webController?.togglePlay()
-        case .previous, .rewind:
-            webController?.start()
-        case .next, .fastForward:
-            webController?.live()
-        }
-    }
 }
 
 extension AppDelegate: NSPopoverDelegate {
