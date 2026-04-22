@@ -66,6 +66,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         guard let button = statusItem.button else { return }
         button.image = icon
+        button.setAccessibilityLabel("BBC Sounds")
         button.action = #selector(handleStatusBarClick(_:))
         button.sendAction(on: [.leftMouseUp, .rightMouseUp])
     }
