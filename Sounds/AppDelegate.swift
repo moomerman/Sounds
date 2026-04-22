@@ -8,8 +8,15 @@
 
 import Cocoa
 
-@NSApplicationMain
+@main
 class AppDelegate: NSObject, NSApplicationDelegate {
+    static func main() {
+        let app = NSApplication.shared
+        let delegate = AppDelegate()
+        app.delegate = delegate
+        app.run()
+    }
+
 
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     var mediaKeyTap: MediaKeyTap?
@@ -40,11 +47,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         mediaKeyTap = MediaKeyTap(delegate: self)
         mediaKeyTap?.start()
 
+        setupMainMenu()
         setupStatusBarItem()
 
         DispatchQueue.main.asyncAfter(deadline: .now() + Constants.launchDelay) {
             self.showPopover(sender: nil)
         }
+    }
+
+    private func setupMainMenu() {
+        let mainMenu = NSMenu()
+        let appMenuItem = NSMenuItem()
+        mainMenu.addItem(appMenuItem)
+
+        let appMenu = NSMenu()
+        appMenu.addItem(withTitle: "Quit Sounds", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+        appMenuItem.submenu = appMenu
+
+        NSApp.mainMenu = mainMenu
     }
 
     private func setupStatusBarItem() {
