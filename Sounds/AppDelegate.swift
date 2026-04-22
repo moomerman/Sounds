@@ -31,14 +31,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return popover
     }()
 
-    lazy var detachedWindowController: NSWindowController = {
-        let controller = NSWindowController()
-        controller.window?.isMovableByWindowBackground = true
-        controller.window?.styleMask = .fullSizeContentView
-        controller.contentViewController = webController
-        return controller
-    }()
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         webController = WebViewController.freshController()
         popover.contentViewController = webController
@@ -140,10 +132,6 @@ extension AppDelegate: MediaKeyTapDelegate {
 extension AppDelegate: NSPopoverDelegate {
     func popoverShouldDetach(_ popover: NSPopover) -> Bool {
         return true
-    }
-
-    func detachableWindow(for popover: NSPopover) -> NSWindow? {
-        return detachedWindowController.window
     }
 }
 
