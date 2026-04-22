@@ -32,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        webController = WebViewController.freshController()
+        webController = WebViewController()
         popover.contentViewController = webController
         self.webController?.view.needsLayout = true
 
@@ -70,9 +70,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc func handleStatusBarClick(_ sender: NSStatusBarButton) {
-        let event = NSApp.currentEvent!
-
-        if event.type == .rightMouseUp {
+        if NSApp.currentEvent?.type == .rightMouseUp {
             showContextMenu()
         } else {
             togglePopover(sender)
@@ -188,10 +186,6 @@ extension AppDelegate {
 }
 
 extension Bundle {
-    var appName: String {
-        return infoDictionary?["CFBundleName"] as? String ?? "Sounds"
-    }
-
     var appVersion: String {
         let version = infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
         let build = infoDictionary?["CFBundleVersion"] as? String ?? "1"
