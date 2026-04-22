@@ -24,6 +24,7 @@ class WebViewController: NSViewController {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.navigationDelegate = self
+        webView.isInspectable = true
         view = webView
     }
 
